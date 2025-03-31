@@ -1,0 +1,63 @@
+Thinking about Security 
+
+Models
+Security Models 
+a scheme for defining and enforcing security policies 
+only the teacher can chnage grades
+students can only view grade assigned to them 
+
+threat models 
+
+all the systems are primarily concerned with security and correctness
+"give good input, give good output"
+
+no encryption does any good, someone will make a mistake
+
+attackers, has value for various abilities to control other people's assets
+learn about where you live, steal your credit card indo 
+disrupts honest's user use of the system
+network security prospective - attacker intercepts and controls network communication 
+web security - attacker sets up malicious site visited by victim; no control of network 
+operating system security = controls malicious files and application
+
+defender 
+protects assents 
+prevents attacker from gaining values 
+
+CIA Goals 
+Confidentiality.
+Data is only accessed by those authorized to access
+attacker cannot learn alice's secrets 
+
+Integrity.
+Data is remains accurate, consistent, and unaltered
+attack cannot corrupt alice's data
+
+Availability. 
+Data is accessible to authorized users when needed 
+- DoS attacks restrict availbility 
+
+You can purchase hacker attacks on bank acounts, credit cards, full identity, email passwords/addresses, for less than $20 - very scary 
+health data can be accessed for $100-$400 
+
+Why are there security vulnerabilities?
+There are more attack services - bluetooth 
+User awareness 
+Insecure code 
+
+
+In this class:
+How to run security tools 
+How to "hack"
+
+
+Due next week:
+Kali VM
+for newer macs there will be more instructions added 
+
+
+
+
+
+
+
