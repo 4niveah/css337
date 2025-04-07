@@ -1,0 +1,33 @@
+user authentication - monday april 7th 
+- verifying that you are who you say you are
+
+MAC - message authentication codes
+- verifying that the message is intact 
+
+what are the many ways we authenticate ourselves?
+- fingerprint 
+- security questions 
+- face ID
+
+4 ways of authenticating useres 
+- based on something the indiviual knows - password, PIN seurity, questions
+- something that the individual posesses - token, smartcard, physical key
+- something the indiviual is - fingerprint, retina, face 
+- something the individual does - voice pattern, handwriting, typing, rhythm 
+
+risk assessment for user authentication 
+- assurance level: the degree of certainty that a user has presented a credential that refers to his/her identity
+- Level 1: little confidence (online forum) to Level 4: very high confidencce (employees accessing highly sensitive data)
+
+common defense 
+- user provides user id and password and then checkes it with the one stored for that specified userID 
+
+lots of password vulnerabilities
+- offline dictionary attack 
++ an attack where you check from passwords found in a dictionary 
++ hashing technique - a way to mask your password, you send a text , run it thorugh hashing algorithm, produces a set of digits 
+
+
+
+
+
