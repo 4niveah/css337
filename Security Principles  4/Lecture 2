@@ -1,0 +1,94 @@
+Secure Software Development Lifecycle (Monday April 7th)
+- Industries try to adopt this 
+
+Secure-by-design is an approach to designing and building systems with security in mind
+involves implementing continuous securit practices, tools, and controls 
+
+saltzer and schroeder - 1975 they build with this guidline for secure design principles 
+main themes are 1. simplicity and 2. restriction
+"Protection of Information in Computer Systems"
+BIG TIME foundation for secure design development 
+
+OWASP - non-profit entity, go to source for cybersecurity principles 
+
+Security Design Principles (should be familar with all design principles and give an example when asked)
+- least privilege 
++ every user and every program of the system should operate using the least set of privelges necessary to complete the job, security rule "need-to-know"
++ example. Lets say you have a regular user and then you have an admin. a regular user can access things within the organization. they may have permissions to certain confidential. 
+the user should only have access to what is absolutely neccessary to do their tasks. The admin though, has the key to the castle. If you are logged in as admin you can sign in to the system
+and change things
++ android is notorious to giving any app permission to any data in the phone or apps in the phone, a good example of what is NOT a good use of least privilege principle
++ the way we can accomplish least privilege is to have no rights by default, by default no one has access. If a user absolutely needs access, then you add access to each 
+piece of information needed at a time
+
+- separation of privilege 
++ applicable to physical environments as well as network security 
++ a protection mechanism that requires two keys to unlock it is more robust and flexible than one allows access tot he presenter of only a single key 
++ for any given task , more than indivual needs to be involved 
++ no single individual can abuse the system 
+-- separation of duties 
++ example. defense system fires a nuclear weapon only if two different people both give the correct command 
++ drawbacks, cost, doubke the time
+
+- job rotation
++the roation of individuals through different tasks and duties in the organizations IT department 
++ want to make sure multiple people are acute to doing the task, so you rotate the task 
+
+- fail-safe defaults ( secure by default) (implicity design) 
++ base access decisions on permission rather exclusion 
++ + authorization rather than elimination 
++ if a particular situation is not covered by any of the rules, then access can not be granted 
++ without authorization, access is not granted 
++ alternative to implicity deny is to just allow access unless otherwise said so 
++white list / love list - list if individuals with proper authorization to give access to. black list - list of inviduals to DENY
+
+- complete mediation (explore more after class) 
++ requires that every access to resources is checked for authorization 
++ this secure design principle promotes the concept of defense in depth 
+
+
+- defense in depth (diversity of defense)
++ provide defnese AT EVERY LEVEL 
++ involves making different ayers of security dissimilar 
++ attacker might know how to hack one layer of defense security, but if you have different layers - the adversary has to double mutilple layers of work to learn how to attacker each layer
+++ more unlikely that they are that skilled
+
+- open design 
+to understand open design, talk about security through obscurity 
++ secury is effective is the environment and security protectiosn are confusing or not known - idea is to hide the object or hide in plain sight 
++ ex. locking your door and putting your key under the mat - provides a false sense of security 
++ steganography is a good example - hiding things in images - follows security thorugh obscurity - which is NOT a secure design principle
+
+open design 
++ security isn't based on adversaries being dumb but the trust that the security system is specific, easily protected, 
++ design or algorithm or techniques shouldn't have to be secret 
++ what is kept a secret is data - password or cryptographic key WHAT TO ACTUALLY GET IN
++ open design principle is based on keeping your password SECRET 
+
+
+-KISS Keep it simple stupid (economy of mechanism)
++ complex doesn't mean secure, you want to have very simple things in place - practice of keeping security processes and tools simple and elegant 
++ security tools should be easy to process and implement 
++ 
+
+least common mechanism 
++ mechanisms used to access resources should be dedicated and not shared 
++ every shared mechanism represents a potential information path between users but you have to be careful! 
++ reusing mechanisms can be great source of information but there is potential to compromise security or efficiency 
++ ex. previous version of rocket available - code for that was used for next rocket. underlaying hardware of versions changed - code was for 32 bit data instead of 64 bit for later model 
++ the rocket exploded - costed 370 million dollars 
++ reusing code is an opportunity fo one process to influence another 
+
+psychological acceptability 
++ 
+
+which one focus on restriction and which one focuses on simplicity?
+whatever we focus on lecture slides, but focus on lecture slides 
+
+
+
+
+
+
+
+-
