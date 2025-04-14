@@ -1,0 +1,32 @@
+
+Protocol for a password 
+
+Protocol for static biometric 
+
+protocol for a token 
+
+protocl for dynamic biometric 
+
+For quiz will be weeks 1-3
+secure design principles, user authentication and cryptography 
+
+midterm will be all of this + week 4 and a little bit of week 5
+
+quiz will be short answers
+
+midterm will be a lot of different questions and kind of hard
+
+cryptography - the art of secret writing 
+plain text ---encryption---->ciphertext-------decryption---->plain text
+
+cryptography can be broken, it's not a "never to be hacked" but more so a "not anytime soon"
+
+messages are in plain text then to cipher text 
+
+ingredients consist of algorithms and keys 
+
+the players of cryptography are cryptogrpaher inventing crypto algorithms and cryptoanalyst is so one who breaks the algroithsm and discovers it 
+
+plain text - the original message in their nroaml readable form, 
+
+crytography - algorithm, it's okay for it to be public! 
