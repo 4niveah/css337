@@ -1,0 +1,97 @@
+Diffie-Hellman Key Exchange
+
+K = (public key of the sender) ^ raised to private key of te reciever * mod q
+how to calculate public key?
+
+q = 7 
+a = 3 //primitive root 
+Xa = 3 
+Xb = 4
+
+public key
+A computes Ya = 3^3 mod 7 =  27 mod 7 = 6 mod 7 = 6 
+B computes Yb = 3^4 mod 7 =  81 mod 7 = 4 mod 7 = 4
+
+compute common secret key
+A computes K(Yb)^XA mod 7 = 4 ^ 3 mod 7 = 64 mod 7 = 1 mod 7 = 1
+B computes K(Ya)^XB mod 7 = 6 ^ 4 mod 7 = 1296 mod 7 = 1 mod 7 = 1 
+
+
+A good hash function should be a one-way hash function 
+
+A hash/digest/checksum is a kind of signature for a stream of data that represents the contents 
+
+Avalanche effect = if there's a small variation in your input , the hash is significantly different 
+
+is someone is to tamper with my message a little bit, the hash is completely different - upholds intgrity cyber goal 
+
+for hashes vs encryption 
+encryption supports confidentiality goal 
+hashes support integrity goal and also non repudiation 
+
+non repudiation - sender cannot later deny that they sent the message, is tied asymmetric cryptography 
+
+
+first running through hash, encrypting through public key, decrypting using public key, running thorugh hash 
+
+collision attack 
+
+example 1 
+
+p = 11
+q = 13 
+e = 7 
+
+n = p * q = 11 * 13 = 143 
+o(n) = (p - 1)(q - 1) = 10 * 12 = 120 
+
+euclid 
+120 = 7 * 17 + 1
+7 = 1 * 7 + 0
+
+extended euclid 
+1 = 120 - 7 * 17 -> whatever is next to e is d 
+  = 7 * 17 - 120 
+
+d = -17 + 120 = 103 
+public key {7, 143}
+private key {103, 143}
+
+m = 7 
+c = 6 ?
+
+
+example 2 
+p = 7
+q = 11
+e = 7
+n = p * q = 7 * 11 = 77
+o(n) = (p - 1)(q - 1) = 6 * 10 = 60
+
+euclid e = 13
+60 = 13 * 4 + 8 
+13 = 8 * 1 + 5
+8 = 5 * 1 + 3
+5 = 3 * 1 + 2
+3 = 2 * 1 + 1 
+2 = 1 * 2 + 0
+
+euclid e = 7 
+60 = 7 * 6 + 4 <- WRONG  7 * 6 is 42
+7 = 4 * 1 + 3
+4 = 3 * 1 + 1
+
+extended euclid 
+1 = 4 - 3 * 1
+  = 4 - 1 * (7 - 4 * 1)
+  = 4 - 7 + 4
+  = 2 * 4 - 1 * 7
+  = 2 * (60 - 7 * 6) - 1 * 7
+  = 2 * 60 - 12 * 7 - 7
+  = 2 * 60 - 13 * 7
+d = 
+
+
+
+
+
