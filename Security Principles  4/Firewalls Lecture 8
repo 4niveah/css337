@@ -1,0 +1,97 @@
+wanted their internal networks to be protected form the external world 
+want to prevent unauthorized sources to get access to systems 
+
+computers and networks are online all the time
+attackers are constantly scanning the things to see 
+
+bunp-in-the-wire - a separate hardware based firewall 
+bum-in-the-stack - implementing a firewall as a software, no explicit device
+bastian host firewall or sacrifical host - stands guard along the path of potential attack and takes the brunt of any attack 
+|
+v
+makes sure software is updated as much as possible 
+
+if your firewall goes offline, everything is up for grabs 
+
+ a lot of filtering and blocking based on packet 
+
+VPN - virtual private networks 
+
+firewall configuratons 
+- multi-homed firewall 
+--multiple interfaces, ex. connecting to internet, web server, and internal network 
+- DMZ - demilitarized zone, 
+-- systems that are externally accesible with some external connectivity but need additional protections across DMZ networks 
+
+security policy and firewall rules 
+no outside web access - drop all outgoing packets to any IP address, port 80
+
+how do you translate security policy into a firewall settings?
+
+firewalls enforce network security policy 
+
+
+firewalls follow "deny by default/allow by exception"
+
+deny by default - assume that all traffic is coming in is malicious traffic 
+authorized traffic is identified - grants access to networks 
+less burden on administrator 
+
+
+if your organziation does now have rules - LETI
+Defining firewall rules is an essential part of a security policy
+If the policy does not predefine rules, perform the following procedure:
+1. Inventory all essential business processes and communications that will cross the
+firewall/checkpoint
+2. Determine the protocols, ports, and Internet Protocol (IP) addresses of valid traffic
+for both internal and external hosts
+3. Write out the rules or use a firewall rule designer/simulator
+4. Test the rules in a safe, nonproduction environment
+5. Obtain written approval for the rule sets from a change approval board or
+administration
+6. Document the rules in a security policy procedure amendment and submit the
+amendment to the security policy management team or administrator for inclusion
+in the official document
+
+
+common types of rules found on most firewalls 
+-- acess to insecure internet websites 
+--access to secure internet websites 
+--access to other internet website protocols 
+-inbound internet email
+-outbound internet email 
+
+composing firewall rules 
+base protocol 
+source address
+source port 
+target address - where is it going?
+target port 
+action 
+a lot of things are packet filetering firewalls - relies heavily on IP address
+
+outbound rules!!!
+
+port 80 - insecure websites 
+port 443 - https secure website
+port 21 - FTP internert based sited
+
+port 25 - email server 
+
+once you decide on security policy for an organization - you have to decide on basic (TCP) rules set 
+the rules are sequential - they can't be mixed up 
+
+when composing firewall rulles 
+- keep the rule set as simple as possible 
+-document every rule 
+- use a chnage control mechanism to track rule modifications 
+- always confirm default deny 
+
+
+
+
+
+
+default allow - assumes most trafic is not malicious or benign 
+
+
