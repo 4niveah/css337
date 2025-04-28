@@ -1,0 +1,106 @@
+Intrusion Detection Systems 
+
+first line of defense is the firewall --------
+you can decide which packets are denied or allowed 
+
+can monitor all traffic entering and leaving the private network and alert the IT staff to any attempts to circumvent security or patterns 
+of inappropriate use 
+
+cryptographic + firewall (intrusion prevention systems) is FIRST line of defense 
+
+limitation intrusion prevention systems 
+- not all access to the internet occurs though the firewall
+- firewalls don't inspect the content of the permitted traffic 
+- cryptographic measures annot protect against insider attacks 
+- 
+
+insider attacs 
+- among the most difficult to detect and prevent 
+- can be motivated by revenge 
+
+intruder behavior 
+target acquisition and information gathering 
+information gathering or system exploit 
+initial access 
+maintaing access 
+privilege escalation 
+covering tracks 
+
+prevent -> detect -> survive 
+intrusion detectiong 
+
+IDS - intrusion detection systems 
+a systems second line of defense 
+
+types of intrusion detection systems 
+-> host-based IDS (HIDS) monitor single host activity 
+-> Network - based (NIDS) monitor network traffic 
+-> Distributed or hybrid: Combines information from a number of sensors, often
+both host and network based, in a central analyzer that is able to better identify
+and respond to intrusion activity
+
+
+components of IDS 
+traffic ollecor/ sensor 
+
+HIDS this could be log files, audi logs or traffic coming to or leaving a aspecific system 
+NIDS this is typically a mechanism for copying traffic off a network traffic link 
+
+anaylis engine - brain of IDS
+
+
+signature database - 
+has a collection of patterns and defintions of known suspcious or malicious activity 
+has a diary of all the bad things that can happen 
+
+
+user interface and reporting - 
+
+
+advantages of NIDS 
+requires fewer systems 
+maintenance costs are usually lower 
+
+
+disadvanatges of NIDS 
+it is ineffective when traffic is encrypted 
+it only looks at network level traffic 
+it has to handle high volumes of traffic 
+
+advantage of HIDS - host based system 
+can be operating system specific 
+can reduce false-positive rate 
+can examine data after it has been decrypted 
+can be specific to application 
+you can get VERY specific - how it impacts your system 
+
+
+disadvantage of HIDS 
+high cost of ownership and maintenance 
+have to process information on every system you want to watch 
+can't relate activity around it 
+if it's logged locally, could be a vulnerability 
+
+TYPES OF IDS 
+signature based - used the signature database, list of attackks that have already happened 
+"misuse detection"
+where you have all the database of attack patterns 
+applies set of patterns and rules 
+needs to be updated and if software isn't updated - it can be vulnerable 
+
+
+anomly based (heuristic) - 
+builds a profile or what is a "normal" profile 
+if there is an deviation from normal behavior 
+downside is if its true or not 
+advantage - able to detect unknown, zero-day attacks 
+downside - high-false positive rate, trained on legitamate data NOT malicious data so it limites the effectiveness 
+
+
+
+
+defense in depth 
+
+
+
+
