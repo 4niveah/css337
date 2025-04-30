@@ -1,0 +1,30 @@
+IDS principles 
+
+assumes malicious behavior is much different than normal user behavior 
+this brings problems of false positives, false negatives - you have to compromise!!
+
+loose interpretation means you classify everything as an attack 
+more false positives 
+
+tight interpretation - 
+the opposite 
+more false negatives 
+
+true positives MATTER MOST - if there is an attack, you want it in order to grab the data 
+
+False positives - in industry this is important, because it costs more to have a syste administrator navigating things that aren't real 
+
+Professor geetha does a lot of IDS research as well as machine learning 
+
+differences between IDS and IPDA 
+IDS tools are only capable of detecting intrusions, IPS tools can actively prevent them as well 
+IDS toold are restrcited to detecting threats, while IPS tools can both detect and prevent them 
+
+IDS tools send alerts when a threat is detected 
+
+advances in IDS/IPS technology - check slide deck 
+
+
+
+
+Security+ certification is base on IDS 
