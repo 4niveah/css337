@@ -1,0 +1,96 @@
+Access Control
+
+preventing of an unauthorized use of a resource 
+
+it the CENTER of computer security 
+it assumes that users/groups have permission to use system's resources, first they have to authenticate to system 
+
+
+components 
+1. authentication - verify identity 
+2. authorization - specificy what rights
+
+
+types of access control 
+
+role-based access control (RBAC) 
+give access to resources based on rules of the organization 
+based on your specific role 
+
+MAC - mandatory access 
+based on regulated clearances 
+each user has access to the resources that they absolutely need 
+you cannot change permissions 
+rules are set by administrators, users can't change permissions 
+used in healthcare, military 
+
+
+Discretionary access DAC - most common form
+based identity of the subject
+UNIX security principle 
+access matrix? it is like a grid that determines who can access an object, what objects can be accessed by a subject, what operation a subject
+can perform on an object 
+row is subject, column is object 
+"provide an access matrix in a way that (integrity) is maintained"
+
+Access Control Matrix (ACM) -> represents access rights uding 2d matrix, tables, rows, columns 
+Access Control Lists (ACLs) -> is how the access matrix is implemented, how it is done, each object has a list what subject can access it 
+Capability Lists -is similar to ACL but is subject-centric 
+
+
+attribute-based access ABAC
+based on attributes of a user 
+"what type of data is it? where is it located"
+"where is the subject requesting access located?" How is being access being requested"
+
+subject attributes - features, characteristics, ex. marketing, communications, edit 
+
+
+
+
+what are we trying to access? - that is our object 
+
+UNIX File-access control 
+chmod command is changing permissions 
+
+traditional unix file access control 
+set user id  -> the system allocates all of the rights to the user - you can act like an admin for things you don't own, causes a lot of security problems 
+
+
+chmod -> changes file permissions 
+chown -> change ownership of the file
+chgrp -> change the group ownership of the file
+umask -> change default access permissions 
+
+u- the owner of the file 
+g- the users who belong to the group 
+o- everyone else 
+a- all users, same as ugo 
+
+owners - everything 
+group - read and write 
+others - nothing 
+
+chmod 760 file1 
+
+
+
+practice example - sample question for my test 
+matrix
+             Alice     Bob,    
+File X ->     RW        R
+FILE Y ->     R         W
+File Z ->     E         
+
+access control list (object specific)
+
+File X -> Alice (RW) -> Bob (R)
+File Y -> Alice(R) -> Bob (W)
+File Z -> Alice(E) -> Bob(no permissions) 
+
+
+capability lists (subject specific) 
+
+Alice -> File X ( RW) -> File Y(R) -> File Z(E)
+Bob -> File X ( R) -> File Y(W) -> File Z(no permission)
+
