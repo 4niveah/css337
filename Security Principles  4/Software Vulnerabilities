@@ -1,0 +1,46 @@
+
+imperfect software 
+programmer typically intends his code to manipulate 
+
+
+software vulnerability 
+any input dependent bug that can cause program to complete operations that deviate from programmers intent 
+ex. dangling pointers
+
+most common type are memory safety violations which consist buffer overflows and dangling pointers
+also input validation errors 
+privilege confusion bugs - cross site request forgery
+
+buffer overflow vulnerability
+
+take some input that it writes into a pre-allocated buffer 
+the developer forgets to check that the size of the input isn't larger than the size of the buffer 
+
+buffer overflow attack is very common in C and C++
+
+not a new problem but any means <- still a major security problem 
+
+validating input, checking input 
+avoiding insecure functions -> strcpy(), strcat(), printf(), gets()
+
+use of dynamic memory allocattion
+
+format string vulnerabillity 
+any function using a format string 
+wha does %x do? %s? %n?
+
+printf(%a) 
+it will rewrite to a another address? not always throw an error, it will rewrite the data 
+
+what can you do? 
+always specify a format string as part od program not as an input 
+
+integer security
+integer range checking has not been systematically applied in the development of most C, 
+
+
+intger overflow 
+-2^n-1 to 2^n-1 -1 
+
+truncation error example 
+
